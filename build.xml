@@ -10,7 +10,7 @@
     <property name="source" value="1.7"/>
 
  <target name="init">
-        <mkdir dir="GITLearning/build/classes"/>
+        <mkdir dir="GIHProject/build/classes"/>
         <copy includeemptydirs="false" todir="GIHProject/build/classes">
             <fileset dir="src">
                 <exclude name="**/*.java"/>

@@ -1,0 +1,6 @@
+
+script : 
+- ./travis-build-upload.sh
+
+before_install:
+ - chmod +x travis-build-upload.sh

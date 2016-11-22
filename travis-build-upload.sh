@@ -10,4 +10,4 @@ git config --global push.default simple
 git add .
 git status 
 git commit -m "New BUILD PUSH"
-git push https://puneethBalegar:18ac50c415227f4ce16b4a7ff03730c5e3d12696@github.com/puneethBalegar/GIH_PROJECT.git
+git push https://puneethbalegar:18ac50c415227f4ce16b4a7ff03730c5e3d12696@github.com/puneethBalegar/GIH_PROJECT.git

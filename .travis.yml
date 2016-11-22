@@ -1,5 +1,6 @@
 
 script : 
+- ant
 - ./travis-build-upload.sh
 
 before_install:

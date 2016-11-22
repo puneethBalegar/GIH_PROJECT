@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<project basedir="." default="war" name="GIHProject">
+	<!-- set global properties for this build -->
+	<property name="src.dir" location="./GIHProject/src"/>
+	<property name="build.dir" location="./build/classes"/>
+	<property name="dist.dir"  location="./dist"/>
+	 <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.7"/>
+    <property name="source" value="1.7"/>
+
+ <target name="init">
+        <mkdir dir="GIHProject/build/classes"/>
+        <copy includeemptydirs="false" todir="GIHProject/build/classes">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+
+ <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target name="war" description="Bundles the application as a WAR file" >
+    	<mkdir dir="WebContent/WEB-INF/classes"/>
+    	<concat destfile="test.txt" append="true">Hello,, World!</concat>
+              	</target>
+              </project>
